@@ -1,0 +1,27 @@
+node_modules/
+dist/
+.scratch/
+
+# Generated test media and benchmark artefacts. Regenerate with `npm run fixtures` / `npm run bench`.
+# NO NSFW MEDIA IS EVER COMMITTED TO THIS REPOSITORY - see public/samples/README.md.
+fixtures/
+
+# Vendored model weights and WASM runtime, fetched by `npm run models` (postinstall).
+# Kept out of git so the repo stays small and the upstream licence stays with upstream.
+public/models/
+public/tfjs/
+
+# Locally supplied evaluation clips
+public/samples/*
+!public/samples/README.md
+
+*.log
+.DS_Store
+.idea/
+
+# Opt-in violence model + ONNX Runtime, vendored by `npm run models:violence`
+public/ort/
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
