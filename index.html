@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+    <title>Local Video Content Detection</title>
+    <meta
+      name="description"
+      content="On-device video content detection. All inference runs locally in the browser - no uploads, no inference APIs, no server."
+    />
+    <!--
+      No preconnect, no font CDN, no analytics. The "runs entirely locally" requirement is
+      easiest to verify if the document simply has no external origins in it at all: load the
+      page once, go offline in devtools, and every feature still works.
+    -->
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
